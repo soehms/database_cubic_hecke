@@ -211,6 +211,8 @@ sage -pip install database_cubic_hecke==2022.3.5
 
 for a special version.
 
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/soehms/database_cubic_hecke)
+
 
 ## Versioning
 
