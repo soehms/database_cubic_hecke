@@ -25,10 +25,10 @@ setup(
   install_requires=[],
   classifiers=[  # Optional
     # How mature is this project? Common values are
-       3, # - Alpha
+    #   3 - Alpha
     #   4 - Beta
     #   5 - Production/Stable
-    # 'Development Status :: 5 - Production/Stable',
+    'Development Status :: 4 - Beta',
     # Whether you support Python 2, Python 3 or both.
     'Programming Language :: Python :: 3'
   ],

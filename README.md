@@ -6,7 +6,7 @@ The original data of Ivan Marin are published in a format which
 can be read by [Maple](https://en.wikipedia.org/wiki/Maple_(software)).
 The purpose of this repository is, to make them available in
 a Python like style such that they can be easily installed into
-[SageMath](https://en.wikipedia.org/wiki/SageMath)) using `pip`.
+[SageMath](https://en.wikipedia.org/wiki/SageMath) using `pip`.
 
 This repository was created as a part of the [SageMath](https://www.sagemath.org/)
 functionality for the cubic Hecke algebras (see Trac ticket
