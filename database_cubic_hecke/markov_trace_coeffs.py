@@ -2,8 +2,8 @@
 # This file was generated using create_markov_trace_data.py
 #
 # on    : Version 2022.3.1
-# under : Sage SageMath version 9.6.beta3, Release Date: 2022-02-27
-# using : Python 3.8.10
+# under : Sage SageMath version 9.6.beta7, Release Date: 2022-04-02
+# using : Python 3.10.3
 # ------------------------------------------------------------
 
 # generated data function for cubic Hecke algebra
