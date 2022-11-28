@@ -9,8 +9,7 @@ a Python like style such that they can be easily installed into
 [SageMath](https://en.wikipedia.org/wiki/SageMath) using `pip`.
 
 This repository was created as a part of the [SageMath](https://www.sagemath.org/)
-functionality for the cubic Hecke algebras (see Trac ticket
-[#29717](https://trac.sagemath.org/ticket/29717))
+functionality for the [cubic Hecke algebras](https://doc.sagemath.org/html/en/reference/algebras/sage/algebras/hecke_algebras/cubic_hecke_algebra.html).
 
 In addition to Ivan Marin's data it contains coefficients for linear forms
 on the cubic Hecke algebras on up to four strands satisfying the Markov
@@ -21,6 +20,8 @@ introduced by the above mentioned ticket
 (see [Python module create_markov_trace_data.py](create_markov_trace_data.py)).
 
 ## Usage
+
+### Python (without SageMath)
 
 In Python, it can be used as follows:
 
@@ -103,9 +104,25 @@ True
 0, 0, 0, 0, 1/s, -u/(s*w), -v/s, 0, 0]
 ```
 
-The usage in Sage will be implicitely via the new class `CubicHeckeAlgebra` according to
-the Trac ticket [#29717](https://trac.sagemath.org/ticket/29717). But anyway, it can also
-be used indenpendently, for example:
+[![Open this repository in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/soehms/database_cubic_hecke)
+
+### SageMath
+
+The usage in Sage is supported by the class [CubicHeckeAlgebra]((https://doc.sagemath.org/html/en/reference/algebras/sage/algebras/hecke_algebras/cubic_hecke_algebra.html)
+which is available since version 9.7. If you don't have Sage or an older version
+on your own device you may use the functionality online:
+
+* [Gitpod](https://gitpod.io/start/#sagemath-sage-vvjhs5sv7yz)
+* [Docker](https://hub.docker.com/repository/docker/soehms/sagemath_knots)
+
+There is a [tutorial](tutorials/cubic_hecke_algebra_tutorial.html) about the Sage class which
+can also be used in these cloud applications.
+
+The use of the cubic Hecke algebra on less than four strands is also possible on
+other [Sage cloud installations](https://doc.sagemath.org/html/en/installation/index.html#in-the-cloud).
+
+
+Anyway, you can also use this Python wrapper in older Sage versions, for example:
 
 ```python
 sage: from database_cubic_hecke import read_irr
@@ -163,13 +180,6 @@ True
 ```
 
 
-
-To build a new release, the files containing the data in Python syntax can be
- upgraded with the [create_marin_data script](create_marin_data.py). There is a
-[workflow](https://github.com/soehms/database_cubic_hecke/blob/main/.github/workflows/check_version_changed.yml)
-to run this script and build a new release if differences are detected. It can
-be triggered manually.
-
 ## Installation
 
 ### Python
@@ -189,15 +199,15 @@ if you want to install a former version.
 
 ### SageMath
 
-After release of the above mentioned Trac ticket, the database can be installed in Sage by:
+If you have a Sage release 9.7 or newer the database can be installed by:
 
 ```bash
 sage -i database_cubic_hecke
 ```
 
 This will contain integration with the cubic Hecke algebra functionality of Sage.
-Before, or to use it independent on the new Sage functionality the installation
-works as follows:
+If your Sage version is older than 9.7 or if you have problems with the above
+installation method you can use `pip` instead:
 
 ```bash
 sage -pip install database_cubic_hecke
@@ -211,18 +221,21 @@ sage -pip install database_cubic_hecke==2022.3.5
 
 for a special version.
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/soehms/database_cubic_hecke)
 
 
 ## Versioning
 
-Version numbers are automatically generated on a manually triggered workflow
+Version numbers are automatically generated on a manually triggered [workflow](https://github.com/soehms/database_cubic_hecke/blob/main/.github/workflows/check_version_changed.yml)
 `Check version changed` if differences to the original databases are detected.
 They follow the scheme
 
 \<year\>.\<month\>.\<day\>
 
 with respect to the date the workflow is triggered.
+
+To build a new release manually, the files containing the data in Python syntax can be
+ upgraded with the [create_marin_data script](create_marin_data.py) script. This is
+performed by the above mentioned workflow.
 
 ## Help
 
