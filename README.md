@@ -16,7 +16,6 @@ on the cubic Hecke algebras on up to four strands satisfying the Markov
 trace condition (see for example
 [Louis Kauffman: Knots and Physics, sections 7.1 and 7.2](https://www.worldscientific.com/worldscibooks/10.1142/4256)).
 This data has been precomputed with the SageMath functionality
-introduced by the above mentioned ticket
 (see [Python module create_markov_trace_data.py](create_markov_trace_data.py)).
 
 ## Usage
@@ -108,12 +107,12 @@ True
 
 ### SageMath
 
-The usage in Sage is supported by the class [CubicHeckeAlgebra]((https://doc.sagemath.org/html/en/reference/algebras/sage/algebras/hecke_algebras/cubic_hecke_algebra.html)
+The usage in Sage is supported by the class [CubicHeckeAlgebra](https://doc.sagemath.org/html/en/reference/algebras/sage/algebras/hecke_algebras/cubic_hecke_algebra.html)
 which is available since version 9.7. If you don't have Sage or an older version
 on your own device you may use the functionality online:
 
-* [Gitpod](https://gitpod.io/start/#sagemath-sage-vvjhs5sv7yz)
-* [Docker](https://hub.docker.com/repository/docker/soehms/sagemath_knots)
+* [Gitpod](https://sagemath-sage-vvjhs5sv7yz.ws-eu77.gitpod.io/)
+* [Docker](https://hub.docker.com/r/soehms/sagemath_knots)
 
 There is a [tutorial](tutorials/cubic_hecke_algebra_tutorial.html) about the Sage class which
 can also be used in these cloud applications.

@@ -41,7 +41,7 @@ def version():
     return __version__.value
 
 
-marin_url = 'http://www.lamfa.u-picardie.fr/marin/softs/H4/'
+marin_url = 'https://www.lamfa.u-picardie.fr/marin/softs/H4/'
 sympy_import_failure="""
 This functionality requires SymPy (https://de.wikipedia.org/wiki/SymPy).
 To install it type: pip install sympy.
