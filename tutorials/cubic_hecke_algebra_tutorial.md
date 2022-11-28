@@ -2,11 +2,10 @@
 
 ## Introduction
 
-$\newcommand{\Q}{{\mathbb Q}\,}$
 
 ### Instructions for use
 
-This tutorial comes as a [Jupyter notebook](https://en.wikipedia.org/wiki/Project_Jupyter) (`ipynb`) that may have been exported to a `pdf`, `html` `md`or a `sage` file. The purpose of the `html`, `md` and `pdf` formats is just for reading. But, if you're using it in a [Jupyter client](https://docs.jupyter.org/en/latest/start/index.html) (i.e. the `ipynb`-version) you may experiment with the examples when running the appropriate cells. You're welcome to do that. However, if you are doing this on a pinned [Gitpod](https://gitpod.io/) workspace (for example [this one](https://gitpod.io/start/#sagemath-sage-vvjhs5sv7yz)) please make a copy of the original file for this. 
+This tutorial comes as a [Jupyter notebook](https://en.wikipedia.org/wiki/Project_Jupyter) (`ipynb`) that may have been exported to a `pdf`, `html` `md`or a `sage` file. The purpose of the `html`, `md` and `pdf` formats is just for reading. But, if you're using it in a [Jupyter client](https://docs.jupyter.org/en/latest/start/index.html) (i.e. the `ipynb`-version) you may experiment with the examples when running the appropriate cells. You're welcome to do that. However, if you are doing this on a pinned [Gitpod](https://gitpod.io/) workspace (for example [this one](https://sagemath-sage-vvjhs5sv7yz.ws-eu77.gitpod.io/)) please make a copy of the original file for this. 
 
 If you have a [SageMath](https://en.wikipedia.org/wiki/SageMath) distribution with a version of at least 9.7 then you can also run the cells of this tutorial on your own computer. To do this, type `sage -n` in a bash shell located in a directory where you downloaded the `cubic_hecke_algebra_tutorial.ipynb` file. This will open a new tab in your default browser showing the contents of that directory. Clicking on the tutorial file there will open another tab showing the file in a Jupyter client.
 
