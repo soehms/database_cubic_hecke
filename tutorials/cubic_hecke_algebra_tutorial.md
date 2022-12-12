@@ -2,20 +2,91 @@
 
 ## Introduction
 
-
 ### Instructions for use
 
-This tutorial comes as a [Jupyter notebook](https://en.wikipedia.org/wiki/Project_Jupyter) (`ipynb`) that may have been exported to a `pdf`, `html` `md`or a `sage` file. The purpose of the `html`, `md` and `pdf` formats is just for reading. But, if you're using it in a [Jupyter client](https://docs.jupyter.org/en/latest/start/index.html) (i.e. the `ipynb`-version) you may experiment with the examples when running the appropriate cells. You're welcome to do that. However, if you are doing this on a pinned [Gitpod](https://gitpod.io/) workspace (for example [this one](https://sagemath-sage-vvjhs5sv7yz.ws-eu77.gitpod.io/)) please make a copy of the original file for this. 
+This tutorial comes as a [Jupyter notebook](https://en.wikipedia.org/wiki/Project_Jupyter) (`ipynb`) that may have been exported to a `pdf`, `html` `md`or a `sage` file. The purpose of the `html`, `md` and `pdf` formats is for reading only. But, if you're using it in a [Jupyter client](https://docs.jupyter.org/en/latest/start/index.html) (i.e. the `ipynb`-version) you may experiment with the examples by running the appropriate cells.
 
-If you have a [SageMath](https://en.wikipedia.org/wiki/SageMath) distribution with a version of at least 9.7 then you can also run the cells of this tutorial on your own computer. To do this, type `sage -n` in a bash shell located in a directory where you downloaded the `cubic_hecke_algebra_tutorial.ipynb` file. This will open a new tab in your default browser showing the contents of that directory. Clicking on the tutorial file there will open another tab showing the file in a Jupyter client.
+#### Working with the Jupyter notebook
 
-You can also copy-paste the contents of the cells into a [Sage command line](https://doc.sagemath.org/html/en/reference/repl/index.html) session if the Sage version is at least 9.7. Note, however, that some of the examples require optional packages (as explained in the tutorial). If you just want to use the tutorial examples for your own experiments then you can import its variables by loading the `sage` file, that is
+##### Using your local device
+
+If you have a [SageMath](https://en.wikipedia.org/wiki/SageMath) distribution with a version of at least 9.7 then you can also run the cells of this tutorial on your own computer. To do this, enter
 
 ```
-sage: load('https://github.com/soehms/database_cubic_hecke/tutorials/cubic_hecke_tutorial.sage')
+sage -n
 ```
 
-If you don't want to install Sage on your machine but have [Docker](https://en.wikipedia.org/wiki/Docker_(software)) on it, you can also run the examples in a Sage command line by using `docker run -it soehms/sagemath_knots:latest` and load the `cubic_hecke_tutorial.sage` file as described above. The command line version can also be used in the terminal of the [Gitpod workspace](https://gitpod.io/start/#sagemath-sage-vvjhs5sv7yz).
+in a bash shell located in a directory where you downloaded the `cubic_hecke_algebra_tutorial.ipynb` file (or rather the entire contents of the folder containing this file, so that local links work). This will open a new tab in your default browser showing the contents of that directory. Clicking on the tutorial file there will open another tab showing the file in a Jupyter client.
+
+Note, that some of the examples require optional packages (as explained in the context of the examples). These examples will fail unless you install the corresponding package.
+
+If you don't have a running Sage version of 9.7 (or newer) on your computer and are considering installing it, please see the [installation instructions](https://doc.sagemath.org/html/en/installation/index.html).
+
+#####  Using Notebook Player
+
+You can run all cells that don't rely on optional packages in the [Notebook Player](https://dahn-research.eu/nbplayer/). To do this first download the `ipynb`  file. Then use the *Browse*-Button of the *Notebook Player* to select the file from your local device.
+
+##### Using Docker
+
+If you don't want to install Sage on your machine but have [Docker](https://en.wikipedia.org/wiki/Docker_(software)) on it, you can run all cells of this notebook (including those depending on optional packages) after entering
+
+```
+docker run -p8888:8888 -w /home/sage/tutorials soehms/sagemath_knots:latest sage-jupyter
+```
+
+and following the instructions shown in the shell to open it in your browser. For more information see the [Docker repository](https://hub.docker.com/r/soehms/sagemath_knots).
+
+
+##### Using Gitpod
+
+Open [this pinned and shared](https://sagemath-sage-vvjhs5sv7yz.ws-eu77.gitpod.io/) [Gitpod workspace](https://gitpod.io/) in your browser (this may take some minutes). Then click on the *Open File* menu and select `/workspace/sage/tutorials/cubic_hecke_algebra_tutorial.ipynb`. After the notebook has opened select the *SageMath* kernel in the right top corner of the sheet. As for the Docker image you may run all cells of the notebook, here.
+
+You're welcome to make your own experiments there. However, be aware that you share this workspace with others. Thus, please make a copy of the original file for this (for example by saving it under a different name).
+
+
+#### Working in the command-line
+
+
+##### Using your local device
+
+You can also copy-paste the contents of the cells into a [Sage command line](https://doc.sagemath.org/html/en/reference/repl/index.html) session if the Sage version is at least 9.7. If you just want to use the tutorial examples for your own experiments then you can import its variables by loading the corresponding `sage` file, that is
+
+```
+sage: load('https://raw.githubusercontent.com/soehms/database_cubic_hecke/main/tutorials/cubic_hecke_algebra_tutorial.sage')
+```
+
+If this fails with a `FeatureNotPresentError` error install the missing optional packages or use the reduced version of the file:
+
+```
+sage: load('https://raw.githubusercontent.com/soehms/database_cubic_hecke/main/tutorials/cubic_hecke_algebra_tutorial_reduced.sage')
+```
+
+
+##### Using SageMathCell
+
+If you don't want to install Sage on your machine you can also run most of the examples in the [SageMathCell](https://sagecell.sagemath.org/). To pre-define the variables of this tutorial evaluate first
+
+```
+load('https://raw.githubusercontent.com/soehms/database_cubic_hecke/main/tutorials/cubic_hecke_algebra_tutorial_reduced.sage')
+```
+
+
+##### Using Docker
+
+You can also use the above Docker image to run all examples in a Sage command line by typing
+
+```
+docker run -it soehms/sagemath_knots:latest
+```
+
+To have the variable declarations of the tutorial available load the `cubic_hecke_tutorial.sage` file as described above. For more information see the [Docker repository](https://hub.docker.com/r/soehms/sagemath_knots).
+
+
+##### Using Gitpod
+
+The command line version can also be used in the terminal of the [Gitpod workspace](https://gitpod.io/start/#sagemath-sage-vvjhs5sv7yz). This is similar as for the Docker case.
+
+
 
 ### About
 
