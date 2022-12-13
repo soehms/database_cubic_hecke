@@ -1,0 +1,11 @@
+{
+    "title": "Notebook Site",
+    "author": "Sebastian Oehms",
+    "collectionId": "nbsiteSample",
+    "pages": [
+        {
+            "title": "Cubic Hecke algebra tutorial",
+            "url": "cubic_hecke_algebra_tutorial.html"
+        }
+    ]
+}

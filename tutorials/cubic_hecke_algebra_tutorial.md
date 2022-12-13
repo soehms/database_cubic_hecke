@@ -4,7 +4,8 @@
 
 ### Instructions for use
 
-This tutorial comes as a [Jupyter notebook](https://en.wikipedia.org/wiki/Project_Jupyter) (`ipynb`) that may have been exported to a `pdf`, `html` `md`or a `sage` file. The purpose of the `html`, `md` and `pdf` formats is for reading only. But, if you're using it in a [Jupyter client](https://docs.jupyter.org/en/latest/start/index.html) (i.e. the `ipynb`-version) you may experiment with the examples by running the appropriate cells.
+This tutorial comes as a [Jupyter notebook](https://en.wikipedia.org/wiki/Project_Jupyter) 
+([ipynb](https://github.com/soehms/database_cubic_hecke/blob/main/tutorials/cubic_hecke_algebra_tutorial.ipynb)) that may have been exported to a [pdf](https://github.com/soehms/database_cubic_hecke/blob/main/tutorials/cubic_hecke_algebra_tutorial.pdf), [html](https://github.com/soehms/database_cubic_hecke/blob/main/tutorials/cubic_hecke_algebra_tutorial.html), [md](https://github.com/soehms/database_cubic_hecke/blob/main/tutorials/cubic_hecke_algebra_tutorial.md) or a [sage](https://github.com/soehms/database_cubic_hecke/blob/main/tutorials/cubic_hecke_algebra_tutorial.sage)-file. The purpose of the `html`, `md` and `pdf` formats is for reading only. But, if you're using it in a [Jupyter client](https://docs.jupyter.org/en/latest/start/index.html) (i.e. the `ipynb`-version) you may experiment with the examples by running the appropriate cells.
 
 #### Working with the Jupyter notebook
 
