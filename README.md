@@ -111,10 +111,10 @@ The usage in Sage is supported by the class [CubicHeckeAlgebra](https://doc.sage
 which is available since version 9.7. If you don't have Sage or an older version
 on your own device you may use the functionality online:
 
-* [Gitpod](https://sagemath-sage-vvjhs5sv7yz.ws-eu77.gitpod.io/)
+* [Gitpod](https://gitpod.io/start/#sagemath-sage-vvjhs5sv7yz)
 * [Docker](https://hub.docker.com/r/soehms/sagemath_knots)
 
-There is a [tutorial](tutorials/cubic_hecke_algebra_tutorial.md) (also available as [pdf](tutorials/cubic_hecke_algebra_tutorial.pdf))
+There is a [tutorial](tutorials/cubic_hecke_algebra_tutorial.ipynb) (also available as [pdf](tutorials/cubic_hecke_algebra_tutorial.pdf))
 about the Sage class which can also be used in these cloud applications.
 
 The use of the cubic Hecke algebra on less than four strands is also possible on
