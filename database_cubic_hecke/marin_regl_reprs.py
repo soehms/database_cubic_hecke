@@ -1,9 +1,9 @@
 # ------------------------------------------------------------
 # This file was generated using create_marin_data.py
 #
-# on    : Version 2022.3.1
-# under : SymPy 1.10.1
-# using : Python 3.8.10
+# on    : Version 2022.4.4
+# under : SymPy 1.12
+# using : Python 3.11.1
 # ------------------------------------------------------------
 
 # generated data function for cubic Hecke algebra

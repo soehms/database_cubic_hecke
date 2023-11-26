@@ -193,10 +193,13 @@ def _load_data(filename):
     except ImportError:
         from urllib2 import HTTPError
 
+    import ssl
+    context = ssl._create_unverified_context()
+
     try:
         download = join(marin_url, filename)
-        download_data = urlopen(download).read().decode()
-        preparsed_data =download_data.replace(':=', '=').replace(';', '').replace('^', '**')
+        download_data = urlopen(download, context=context).read().decode()
+        preparsed_data = download_data.replace(':=', '=').replace(';', '').replace('^', '**')
         return preparsed_data
     except (HTTPError, URLError):
         raise IOError('Data import file %s not found! Internet connection needed!' %(filename))
